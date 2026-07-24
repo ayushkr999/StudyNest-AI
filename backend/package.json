@@ -1,0 +1,38 @@
+{
+  "name": "studynest-ai-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Mahi",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^2.13.0",
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/community": "^1.0.0",
+    "@langchain/core": "^1.0.1",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "langchain": "^1.0.1",
+    "mongoose": "^8.19.1",
+    "multer": "^2.0.2",
+    "pdf-parse": "^2.4.3",
+    "pdfjs-dist": "^5.4.296",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "overrides": {
+    "dotenv": "^16.4.5"
+  }
+}
