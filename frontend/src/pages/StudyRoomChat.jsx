@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Users, Send, ArrowLeft, Bot, Hash, Lightbulb, Loader2 } from 'lucide-react';
 
 // Use same URL as axiosInstance base — works for both local dev and production
-const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+const SOCKET_URL = import.meta.env.VITE_API_URL || import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
 const StudyRoomChat = () => {
   const { roomId } = useParams();
