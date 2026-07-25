@@ -1,4 +1,4 @@
-# 🧠 **StudyBuddy AI** – Your Ultimate Smart Study Companion 📚✨  
+# 🧠 **StudyNest AI** – Your Ultimate Smart Study Companion 📚✨  
 “Study smarter, not harder.”
 
 A full-stack AI-powered productivity app built with ❤️ using the **MERN stack**, designed to help students and learners manage their notes, summarize content, chat with documents, and boost retention with flashcards — all in one place.
