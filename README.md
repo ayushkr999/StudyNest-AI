@@ -25,26 +25,6 @@ An AI-powered collaborative learning platform with smart notes, PDF question ans
 
 ---
 
-## 📑 Table of Contents
-
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [How the RAG Pipeline Works](#-how-the-rag-pipeline-works)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [API Overview](#-api-overview)
-- [Security](#-security)
-- [Deployment](#-deployment)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
-
----
-
 ## 🔎 Overview
 
 Students often manage notes, PDFs, revision materials, and study groups across multiple disconnected platforms.
@@ -249,8 +229,6 @@ StudyNest-AI/
 
 ## ⚙️ Getting Started
 
-Follow these instructions to run StudyNest AI locally.
-
 ### Prerequisites
 
 - Node.js 20+
@@ -359,8 +337,6 @@ VITE_SOCKET_URL=http://localhost:5000
 ---
 
 ## 🛡️ Security
-
-Security measures implemented in StudyNest AI include:
 
 - JWT authentication using HTTP-only cookies.
 - Password hashing with bcryptjs.
