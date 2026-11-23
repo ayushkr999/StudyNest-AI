@@ -15,14 +15,22 @@ const startServer = async () => {
   const app = createApp();
   const server = http.createServer(app);
 
-  // Setup Socket.IO
-  const io = new SocketIOServer(server, {
-    cors: {
-      origin: [ENV.CLIENT_URL, 'http://localhost:5173', 'http://127.0.0.1:5173'],
-      methods: ['GET', 'POST'],
-      credentials: true,
-    },
-  });
+// Setup Socket.IO
+const allowedOrigins = [
+  ENV.CLIENT_URL,
+  'https://studynest-3zx8s6boc-devayush761-7213s-projects.vercel.app',
+  'http://localhost:5173',
+  'http://127.0.0.1:5173'
+].filter(Boolean);
+
+const io = new SocketIOServer(server, {
+  cors: {
+    origin: allowedOrigins,
+    methods: ['GET', 'POST'],
+    
+    credentials: true,
+  },
+});
 
   setupRoomSocket(io);
 

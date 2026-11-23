@@ -21,15 +21,20 @@ import dashboardRoutes from './routes/dashboard.routes.js';
 export const createApp = () => {
   const app = express();
 
-  // CORS Configuration
-  app.use(
-    cors({
-      origin: [ENV.CLIENT_URL, 'http://localhost:5173', 'http://127.0.0.1:5173'],
-      credentials: true,
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-      allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-    })
-  );
+// CORS Configuration
+const allowedOrigins = [
+  ENV.CLIENT_URL,
+  'https://studynest-3zx8s6boc-devayush761-7213s-projects.vercel.app',
+  'http://localhost:5173',
+  'http://127.0.0.1:5173'
+].filter(Boolean);
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+}));
 
   // Parsers
   app.use(express.json({ limit: '15mb' }));
